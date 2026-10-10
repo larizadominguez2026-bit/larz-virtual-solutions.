@@ -119,6 +119,20 @@ footer small{color:var(--muted);font-size:.92rem}
 .io .svc li.in::before{transform:none}
 }
 @media(prefers-reduced-motion:reduce){.line span,.frame,.frame img,.shot img,.svc li::before,.cert .txt,.bar{animation:none!important;transition:none!important;clip-path:none!important;transform:none!important;opacity:1!important}}
+dialog{border:0;padding:clamp(1.5rem,4vw,2.25rem);max-width:30rem;width:calc(100% - 2.5rem);background:var(--ground);color:var(--ink);border-radius:2px}
+dialog::backdrop{background:rgba(6,59,0,.6)}
+dialog[open]{animation:dlg .35s var(--ease)}
+@keyframes dlg{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+dialog form{text-align:right;margin:-.4rem 0 .4rem}
+dialog .x{background:none;border:0;padding:0;color:var(--muted);font:inherit;font-size:.95rem;cursor:pointer;text-decoration:underline;text-underline-offset:.3em}
+dialog h3{font-size:clamp(1.6rem,4vw,2rem);line-height:1.1}
+dialog p{margin-top:.6rem;color:var(--muted)}
+.opts{list-style:none;margin:1.25rem 0 0;padding:0;border-top:1px solid var(--rule)}
+.opts a{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;padding:.85rem 0;border-bottom:1px solid var(--rule);text-decoration:none}
+.opts strong{font-weight:500}
+.opts span{color:var(--muted);font-size:.92rem;text-align:right;overflow-wrap:anywhere}
+.opts a:hover strong{text-decoration:underline;text-underline-offset:.3em}
+@media(prefers-reduced-motion:reduce){dialog[open]{animation:none}}
 </style>
 </head>
 <body>
@@ -161,31 +175,31 @@ footer small{color:var(--muted);font-size:.92rem}
       </div>
       <ul class="svc">
         <li>
-          <div><h3>Data entry</h3><p>Accurate and organized data entry to help keep your business records updated, consistent, and easy to manage.</p><a class="inq" href="mailto:larizadominguez2026@gmail.com?subject=Inquiry%3A%20Data%20entry">Inquire about this service</a></div>
+          <div><h3>Data entry</h3><p>Accurate and organized data entry to help keep your business records updated, consistent, and easy to manage.</p><a class="inq" data-s="Data entry" href="mailto:larizadominguez2026@gmail.com?subject=Inquiry%3A%20Data%20entry">Inquire about this service</a></div>
           <ul class="tasks"><li>Data entry and spreadsheet updates</li><li>Database and record management</li><li>Copy-paste tasks and data organization</li><li>Data verification and accuracy checking</li><li>File and document organization</li></ul>
         </li>
         <li>
-          <div><h3>Administrative assistance</h3><p>Dependable administrative support to help manage daily business tasks and keep your operations organized.</p><a class="inq" href="mailto:larizadominguez2026@gmail.com?subject=Inquiry%3A%20Administrative%20assistance">Inquire about this service</a></div>
+          <div><h3>Administrative assistance</h3><p>Dependable administrative support to help manage daily business tasks and keep your operations organized.</p><a class="inq" data-s="Administrative assistance" href="mailto:larizadominguez2026@gmail.com?subject=Inquiry%3A%20Administrative%20assistance">Inquire about this service</a></div>
           <ul class="tasks"><li>Document preparation and formatting</li><li>File and folder organization</li><li>Administrative task tracking</li><li>Record maintenance</li><li>General office and virtual administrative support</li></ul>
         </li>
         <li>
-          <div><h3>Online research and lead generation</h3><p>Organized online research and lead list preparation to help businesses gather useful information and identify potential prospects.</p><a class="inq" href="mailto:larizadominguez2026@gmail.com?subject=Inquiry%3A%20Online%20research%20and%20lead%20generation">Inquire about this service</a></div>
+          <div><h3>Online research and lead generation</h3><p>Organized online research and lead list preparation to help businesses gather useful information and identify potential prospects.</p><a class="inq" data-s="Online research and lead generation" href="mailto:larizadominguez2026@gmail.com?subject=Inquiry%3A%20Online%20research%20and%20lead%20generation">Inquire about this service</a></div>
           <ul class="tasks"><li>Online research and information gathering</li><li>Business and contact research</li><li>Lead list building and organization</li><li>Spreadsheet preparation</li><li>Data verification and information checking</li></ul>
         </li>
         <li>
-          <div><h3>Map annotation and data annotation</h3><p>Careful map and data annotation following project guidelines, with attention to detail, accuracy, and consistency.</p><p class="note">I bring practical, hands-on map annotation experience to this work.</p><a class="inq" href="mailto:larizadominguez2026@gmail.com?subject=Inquiry%3A%20Map%20annotation%20and%20data%20annotation">Inquire about this service</a></div>
+          <div><h3>Map annotation and data annotation</h3><p>Careful map and data annotation following project guidelines, with attention to detail, accuracy, and consistency.</p><p class="note">I bring practical, hands-on map annotation experience to this work.</p><a class="inq" data-s="Map annotation and data annotation" href="mailto:larizadominguez2026@gmail.com?subject=Inquiry%3A%20Map%20annotation%20and%20data%20annotation">Inquire about this service</a></div>
           <ul class="tasks"><li>Map feature identification and labeling</li><li>Road, building, and location annotation</li><li>Land cover and transportation annotation</li><li>Standard and multilevel building annotation</li><li>3D roof annotation</li><li>Data labeling and guideline-based evaluation</li><li>Annotation quality checking and error correction</li></ul>
         </li>
         <li>
-          <div><h3>Social media support</h3><p>Organized social media assistance to help keep your content planned, prepared, and consistent.</p><a class="inq" href="mailto:larizadominguez2026@gmail.com?subject=Inquiry%3A%20Social%20media%20support">Inquire about this service</a></div>
+          <div><h3>Social media support</h3><p>Organized social media assistance to help keep your content planned, prepared, and consistent.</p><a class="inq" data-s="Social media support" href="mailto:larizadominguez2026@gmail.com?subject=Inquiry%3A%20Social%20media%20support">Inquire about this service</a></div>
           <ul class="tasks"><li>Content calendar organization</li><li>Social media post scheduling</li><li>Basic Canva graphic design</li><li>Caption and content organization</li><li>Content planning assistance</li><li>Basic engagement support</li></ul>
         </li>
         <li>
-          <div><h3>Calendar management</h3><p>Reliable calendar assistance to help organize appointments, meetings, reminders, and daily schedules.</p><a class="inq" href="mailto:larizadominguez2026@gmail.com?subject=Inquiry%3A%20Calendar%20management">Inquire about this service</a></div>
+          <div><h3>Calendar management</h3><p>Reliable calendar assistance to help organize appointments, meetings, reminders, and daily schedules.</p><a class="inq" data-s="Calendar management" href="mailto:larizadominguez2026@gmail.com?subject=Inquiry%3A%20Calendar%20management">Inquire about this service</a></div>
           <ul class="tasks"><li>Appointment and meeting scheduling</li><li>Calendar organization</li><li>Meeting reminders</li><li>Schedule updates</li><li>Daily and weekly schedule coordination</li><li>Follow-up tracking</li></ul>
         </li>
         <li>
-          <div><h3>Email management</h3><p>Organized inbox support to help manage incoming messages, prioritize important emails, and keep follow-ups on track.</p><a class="inq" href="mailto:larizadominguez2026@gmail.com?subject=Inquiry%3A%20Email%20management">Inquire about this service</a></div>
+          <div><h3>Email management</h3><p>Organized inbox support to help manage incoming messages, prioritize important emails, and keep follow-ups on track.</p><a class="inq" data-s="Email management" href="mailto:larizadominguez2026@gmail.com?subject=Inquiry%3A%20Email%20management">Inquire about this service</a></div>
           <ul class="tasks"><li>Inbox organization</li><li>Email sorting and categorization</li><li>Drafting routine email responses for client approval</li><li>Follow-up reminders</li><li>Email correspondence organization</li><li>Flagging important messages</li></ul>
         </li>
       </ul>
@@ -246,11 +260,35 @@ footer small{color:var(--muted);font-size:.92rem}
   </div>
 </footer>
 
+<dialog id="inq" aria-labelledby="inq-t">
+  <form method="dialog"><button class="x">Close</button></form>
+  <h3 id="inq-t">Inquire about <span id="inq-s">this service</span></h3>
+  <p>Choose how you’d like to reach me.</p>
+  <ul class="opts">
+    <li><a id="inq-mail" href="mailto:larizadominguez2026@gmail.com"><strong>Email</strong><span>larizadominguez2026@gmail.com</span></a></li>
+    <li><a href="https://calendly.com/larizadominguez2026" target="_blank" rel="noopener noreferrer"><strong>Book a call</strong><span>Pick a time on Calendly</span></a></li>
+    <li><a href="https://www.facebook.com/larzvirtualsolutions21" target="_blank" rel="noopener noreferrer"><strong>Facebook</strong><span>larzvirtualsolutions21</span></a></li>
+    <li><a href="https://www.instagram.com/larzvirtualsolutions/" target="_blank" rel="noopener noreferrer"><strong>Instagram</strong><span>@larzvirtualsolutions</span></a></li>
+    <li><a href="https://www.tiktok.com/@larzvirtualsolutions" target="_blank" rel="noopener noreferrer"><strong>TikTok</strong><span>@larzvirtualsolutions</span></a></li>
+    <li><a href="https://www.linkedin.com/in/larzvirtualsolutions/" target="_blank" rel="noopener noreferrer"><strong>LinkedIn</strong><span>larzvirtualsolutions</span></a></li>
+  </ul>
+</dialog>
+
 <script>
 if(!CSS.supports('animation-timeline: view()')){
   document.documentElement.classList.add('io');
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.15});
   document.querySelectorAll('.shot,.svc li').forEach(function(el){io.observe(el)});
+}
+
+var dlg=document.getElementById('inq');
+if(dlg&&dlg.showModal){
+  document.querySelectorAll('.inq').forEach(function(a){a.addEventListener('click',function(e){
+    e.preventDefault();var s=a.getAttribute('data-s');
+    document.getElementById('inq-s').textContent=s.toLowerCase();
+    document.getElementById('inq-mail').href='mailto:larizadominguez2026@gmail.com?subject='+encodeURIComponent('Inquiry: '+s);
+    dlg.showModal();});});
+  dlg.addEventListener('click',function(e){if(e.target===dlg)dlg.close();});
 }
 </script>
 </body>
